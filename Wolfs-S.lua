@@ -18,7 +18,7 @@ end)
 
 
 function LoadConfig()
-    local load = LoadResourceFile(GetCurrentResourceName(), "./cfg/config.json")
+    local load = LoadResourceFile(GetCurrentResourceName(), "./config.json")
     if load ~= nil then
         configs = json.decode(load)
         return true
